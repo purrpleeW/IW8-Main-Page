@@ -13,37 +13,12 @@ html, body {
     color: #fff;
 }
 
-.background-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: -2;
-    pointer-events: none;
-}
-
 .overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(3px);
     z-index: -1;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
 }
 
 .content {
@@ -104,4 +79,54 @@ html, body {
 .secondary:hover {
     background: rgba(255, 255, 255, 0.16);
     border-color: rgba(255, 255, 255, 0.25);
+}
+
+#bgVideo { /* w3schools win?? */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.hero {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.content {
+    width: 100%;
+    max-width: 700px;
+    padding: 3rem;
+    background: rgba(10, 10, 10, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.content h1 {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+.content p {
+    color: rgba(255, 255, 255, 0.82);
 }
