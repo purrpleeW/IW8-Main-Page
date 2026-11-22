@@ -1,6 +1,6 @@
 const downloadBtn = document.getElementById('downloadBtn');
 
-const downloadURL = 'https://discord.gg/WVSErUvBbj';
+const downloadURL = 'https://discord.gg/demonware';
 
 downloadBtn.addEventListener('click', (e) => {
     e.preventDefault();
