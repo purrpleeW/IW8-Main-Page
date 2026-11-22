@@ -3,45 +3,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IW8-Mod | Download</title>
+    <title>Nebula | Download</title>
+    <meta name="description" content="Nebula: client modifications for Call of Duty®: Modern Warfare® (2019), Vanguard, Black Ops 6 and more." />
+    <meta name="theme-color" content="#0a0d14" />
+
+    <meta property="og:title" content="Nebula" />
+    <meta property="og:description" content="Client modifications for Modern Warfare (2019), Vanguard, Black Ops 6 and more." />
+    <meta property="og:image" content="assets/images/variant4.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="assets/images/logo-alpha.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-    <div class="overlay"></div>
-
-    <video autoplay muted loop playsinline preload="auto" class="background-video">
-        <source src="https://cdn.fsploit.xyz/videos/site-placeholder/placeholder.mp4" type="video/mp4">
-    </video>
+    <div class="background" aria-hidden="true"></div>
 
     <main class="hero">
-        <div class="content">
-            <h1>IW8-Mod</h1>
-            <p>A client modification for Call of Duty®: Modern Warfare® (2019).<br>
-            Drop back into Verdansk, the Pacific, or Rebirth Island with IW8-Mod!
-            <p>Multiplayer is now available, load up Warzone 1 again with your squad.</p>
+        <img src="assets/images/logo-alpha.png" alt="Nebula logo" class="logo" width="150" height="150" />
 
-            <div class="buttons">
-                <a href="#" class="btn primary" id="downloadBtn">
-                    Download
-                    <i class="fa-brands fa-discord"></i>
-                </a>
+        <h1>Nebula</h1>
+        <p class="tagline">Client modifications for Call of Duty®.<br>
+        Bringing modding features to your favorite games...</p>
 
-                <a href="https://docs.iw8.dev" class="btn secondary">
-                    Documentation
-                </a>
-            </div>
+        <ul class="games">
+            <li>
+                <span class="game-name">Modern Warfare® <span class="year">(2019)</span></span>
+                <span class="tag">IW8</span>
+            </li>
+            <li>
+                <span class="game-name">Vanguard <span class="year">(2021)</span></span>
+                <span class="tag">S4</span>
+            </li>
+            <li>
+                <span class="game-name">Black Ops 6 <span class="year">(2024)</span></span>
+                <span class="tag">T10</span>
+            </li>
+            <li class="more">More titles as they come out</li>
+        </ul>
+
+        <div class="buttons">
+            <a href="#" class="btn primary" id="downloadBtn">
+                <i class="fa-brands fa-discord"></i>
+                Download
+            </a>
+
+            <a href="https://docs.iw8.dev" class="btn secondary">
+                Documentation
+            </a>
         </div>
     </main>
+
+    <footer class="disclaimer">
+        Nebula is not affiliated with, or endorsed by, Activision Inc.
+    </footer>
+
     <script src="assets/js/main.js"></script>
-    <div class="disclaimer">
-        IW8-Mod is not affiliated with, or endorsed by, Activision Inc.
-    </div>
 </body>
 </html>
