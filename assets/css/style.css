@@ -129,6 +129,30 @@ h1 {
     border-bottom: none;
 }
 
+.notice {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: -1rem 0 2rem;
+}
+
+.notice i {
+    color: var(--faint);
+    margin-right: 0.35rem;
+}
+
+.notice a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: rgba(242, 244, 248, 0.35);
+    text-underline-offset: 3px;
+    margin-left: 0.25rem;
+    transition: text-decoration-color 0.2s ease;
+}
+
+.notice a:hover {
+    text-decoration-color: var(--text);
+}
+
 .buttons {
     display: flex;
     gap: 0.75rem;
